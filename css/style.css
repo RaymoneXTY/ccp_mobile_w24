@@ -41,7 +41,7 @@
     }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif, "Verdana";
     background-color: var(--clr-background);
     color: var(--clr-dark);
     min-width: 320px;
@@ -124,7 +124,7 @@ h3 {font-family: 'Pacifico', cursive;
     font-size: 200%;
     margin: 2%;}
 
-p {font-family: "Font Awesome 5 Free", "Verdana";
+p {font-family: "Verdana", sans-serif, "Font Awesome 5 Free";
     font-size: 100%;
     line-height: 1.5;
     padding: 1%;
@@ -148,11 +148,11 @@ div {display: grid;
 div ol {margin: 2%;
     padding: 5%;
     font-size: 100%;
-    font-family: "Font Awesome 5 Brands";
+    font-family: "Font Awesome 5 Brands", "Verdana";
     line-height: 1.5;
     list-style-type: lower-alpha;
     }
-footer {font-family: "Font Awesome 5 Brands";
+footer {font-family: "Font Awesome 5 Brands", "Verdana";
     font-size: 50%;
     text-align: center;
     margin: 5%;}
