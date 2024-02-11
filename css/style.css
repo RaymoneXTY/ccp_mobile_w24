@@ -88,7 +88,7 @@ nav ul {display: grid;
     border-radius: 10px;
     }
 ul li {font-size: 100%;
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
     color: var(--clr-white);
     padding: 1%;
@@ -124,7 +124,7 @@ h3 {font-family: 'Pacifico', cursive;
     font-size: 200%;
     margin: 2%;}
 
-p {font-family: "Font Awesome 5 Free";
+p {font-family: "Font Awesome 5 Free", "Verdana";
     font-size: 100%;
     line-height: 1.5;
     padding: 1%;
