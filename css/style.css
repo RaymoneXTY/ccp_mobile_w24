@@ -112,7 +112,8 @@ h3 {font-family: 'Pacifico', cursive;
 p {font-family: "Font Awesome 5 Free";
     font-size: 100%;
     line-height: 1.5;
-    margin:1%;}
+    padding: 1%;
+    margin: 2%;}
 
 img {display: block;
     padding: 5%;
