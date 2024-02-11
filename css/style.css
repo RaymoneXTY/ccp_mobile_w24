@@ -102,7 +102,8 @@ a:hover {color: var(--clr-light);
 a:active {color: var(--clr-dark);
     background-color: var(--clr-light);}
 a.current {color: var(--clr-dark);
-    background-color: var(--clr-white);}
+    background-color: var(--clr-white);
+    font-style: oblique;}
 
 /* set the link in the main content ares */
 a.source{font-style: oblique;
