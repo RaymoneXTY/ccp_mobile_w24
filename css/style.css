@@ -145,7 +145,8 @@ div {display: grid;
     align-items: center;
     justify-items: center;}
 
-div ol {margin: 5%;
+div ol {margin: 2%;
+    padding: 5%;
     font-size: 100%;
     font-family: "Font Awesome 5 Brands";
     line-height: 1.5;
