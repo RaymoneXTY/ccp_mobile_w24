@@ -101,6 +101,8 @@ a:hover {color: var(--clr-light);
     background-color: var(--clr-dark);}
 a:active {color: var(--clr-dark);
     background-color: var(--clr-light);}
+a.current {color: var(--clr-dark);
+    background-color: var(--clr-white);}
 
 /* set the link in the main content ares */
 a.source:link {color: var(--clr-mid);}
