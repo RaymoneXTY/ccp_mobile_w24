@@ -38,7 +38,7 @@ header > h1 {
     text-align: center;
     line-height: 1;
     font-size: 500%;
-    margin: 5%;
+    margin: 7%;
     }
 header > h1::first-line {
         color: var(--clr-mid);
@@ -49,13 +49,14 @@ a.skip_to_main {position: absolute;
     left: -9999px;
     z-index: 999;
     padding: 1em;
-    background-color: black;
-    color: white;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
     opacity: 0;}
 
 a.skip_to_main:focus {left: 50%;
-  transform: translateX(-50%);
-  opacity: 1;}
+    transform: translateX(-50%);
+    top: 0;
+    opacity: 1;}
 
 
 /* set the navigation bar */
@@ -114,19 +115,21 @@ p {font-family: "Font Awesome 5 Free";
     margin:1%;}
 
 img {display: block;
-    padding: 2%;
-    margin: 4%;}
+    padding: 5%;
+    margin: 2%;}
+
+img.intro {width:50%;}
 
 video {display: block;
-    padding: 2%;
-    margin: 4%;}
+    padding: 5%;
+    margin: 2%;}
 
 div {display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;}
 
-div ol {margin-left: 50px;
+div ol {margin: 1%;
     font-size: 100%;
     font-family: "Font Awesome 5 Brands";
     line-height: 1.5;
@@ -143,21 +146,33 @@ footer {font-family: "Font Awesome 5 Brands";
 .pet_gallery {display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2%;
-    border: 2px dashed darkblue;
+    border: 2px dashed var(--clr-mid);
     margin: 2%;
     align-items: center;
-    justify-items: center;}
+    justify-items: center;
+    align-content: space-evenly;}
 
 
 .pet_gallery * {width: 100%;
     height: 100%;
     object-fit: cover;}
 
+@media (max-width: 768px) {
+    .pet_gallery {grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2%;
+        border: 2px dashed var(--clr-mid);
+        margin: 2%;
+        align-items: center;
+        justify-items: center;
+        align-content: space-evenly;}
+    }
+
+
 /* set the grid layout for the recipes gallery */
 .recipe_gallery {display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2%;
-    border: 2px dashed darkblue;
+    border: 2px dashed var(--clr-mid);
     margin: 2%;
     align-items: center;
     justify-items: center;}
@@ -166,18 +181,40 @@ footer {font-family: "Font Awesome 5 Brands";
     height: 100%;
     object-fit: cover;}
 
+@media (max-width: 768px) {
+    .recipe_gallery {grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2%;
+        border: 2px dashed var(--clr-mid);
+        margin: 2%;
+        align-items: center;
+        justify-items: center;}
+    }
+@media (max-width: 768px) {
+    .recipe_gallery :last-child {grid-column: span 2;}
+    }
+
+/* set the grid layout for the travel gallery */
 .travel_gallery {display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1%;
-    border: 2px dashed darkblue;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%;
+    border: 2px dashed var(--clr-mid);
     margin: 2%;
     padding: 1%;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: left;}
-.travel_gallery * {max-width: 100%;
-    object-fit:cover;}
-figure {display: block;
-    padding: 2%;}
-figcaption {font-family: "Font Awesome 5 Free";}
+    align-items: start;
+    justify-items: center;
+    align-content: space-evenly;}
+.travel_gallery img {width: 100%;
+    object-fit: cover;}
+.travel_gallery figcaption {text-align: center;
+    font-size: 50%;
+    font-family: "Font Awesome 5 Brands";
+    line-height: 1.5;
+    margin: 1%;}
+@media (max-width: 768px) {
+    .travel_gallery {grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2%;
+        border: 2px dashed var(--clr-mid);
+        margin: 2%;
+        align-items: start;
+        justify-items: center;}
+    }
